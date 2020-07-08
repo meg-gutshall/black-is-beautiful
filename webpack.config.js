@@ -19,6 +19,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Black Is Beautiful',
+      template: 'black-is-beautiful.html',
       scriptLoading: 'defer',
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
