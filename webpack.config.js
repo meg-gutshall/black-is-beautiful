@@ -5,7 +5,7 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/entry.js',
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -29,12 +29,22 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.(sass|scss|css)$/i,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          'sass-loader'
         ],
-      },
-    ],
-  },
+      }, {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader']
+      }, {
+        test: /\.(eot|woff|woff2|ttf|otf)$/,
+        use: ['file-loader']
+      }, {
+        test: /\.js$/,
+        use: ['babel-loader']
+      }
+    ]
+  }
 };
