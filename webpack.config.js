@@ -55,10 +55,10 @@ module.exports = {
       }, {
         test: /\.(ttf|svg|otf|eot|woff(2)?)$/i,
         use: {
-          loader: 'url-loader',
+          loader: 'file-loader',
           options: {
-            name: 'fonts/[name].[ext]',
-            esModule: false
+            name: '[name].[ext]',
+            outputPath: 'fonts/'
           }
         }
       }, {

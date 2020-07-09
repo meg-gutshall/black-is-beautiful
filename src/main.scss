@@ -1,4 +1,4 @@
-@import './assets/css/fonts';
+@import 'fonts';
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/solid';
@@ -7,12 +7,20 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background-color: #34190E;
+  background-image: url(./images/black-is-beautiful-background.png);
+  background-size: cover;
 }
 
 div.jumbotron-fluid {
-  font-family: "DIN", Arial, Helvetica, sans-serif;
+  font-family: DIN, Arial, Helvetica, sans-serif;
   font-weight: 900;
   color: #ffffff;
+  background-color: #000000;
+}
+
+footer {
   background-color: #000000;
 }
 
