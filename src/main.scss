@@ -1,4 +1,8 @@
 @import './assets/css/fonts';
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~bootstrap';
 
 body {
@@ -10,4 +14,8 @@ div.jumbotron-fluid {
   font-weight: 900;
   color: #ffffff;
   background-color: #000000;
+}
+
+.fas, .fab {
+  font-size: 3rem;
 }
