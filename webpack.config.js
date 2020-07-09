@@ -10,7 +10,7 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  devtool: 'eval-cheap-source-map',
+  devtool: 'source-map',
   devServer: {
     contentBase: './dist',
   },
@@ -29,21 +29,43 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(sass|scss|css)$/i,
+        test: /\.(s[ac]ss)$/i,
         use: [
           'style-loader',
-          'css-loader',
-          'sass-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          'resolve-url-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass'),
+              sourceMap: true
+            }
+          }
         ],
       }, {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader']
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          'file-loader'
+        ]
       }, {
-        test: /\.(eot|woff|woff2|ttf|otf)$/,
-        use: ['file-loader']
+        test: /\.(ttf|svg)$/i,
+        use: {
+          loader: 'url-loader',
+          options: {
+            name: 'fonts/[name].[ext]',
+            esModule: false
+          }
+        }
       }, {
-        test: /\.js$/,
-        use: ['babel-loader']
+        test: /\.js$/i,
+        use: [
+          'babel-loader'
+        ]
       }
     ]
   }
