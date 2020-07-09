@@ -49,11 +49,11 @@ module.exports = {
         ],
       }, {
         test: /\.(png|jpg|gif)$/i,
-        use: [
-          'file-loader'
-        ]
+        use: {
+          loader: 'file-loader',
+        }
       }, {
-        test: /\.(ttf|svg)$/i,
+        test: /\.(ttf|svg|otf|eot|woff(2)?)$/i,
         use: {
           loader: 'url-loader',
           options: {
