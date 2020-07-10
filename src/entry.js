@@ -1,8 +1,8 @@
 import './main.scss';
-import 'bootstrap';
-import NAACPSeal from './images/naacp-seal.png';
+import NAACPSeal from './images/naacp-seal-small.png';
+import Logo from './images/black-is-beautiful-logo-small.png';
 
-function naacpSeal() {
+function addSeal() {
   const element = document.getElementById('seal');
 
   const seal = new Image();
@@ -14,4 +14,17 @@ function naacpSeal() {
   return element;
 }
 
-naacpSeal();
+function addLogo() {
+  const element = document.getElementById('logo');
+
+  const logo = new Image();
+  logo.src = Logo;
+  logo.setAttribute('class', 'img-fluid');
+  logo.setAttribute('alt', 'Black Is Beautiful Logo');
+
+  element.appendChild(logo);
+  return element;
+}
+
+addSeal();
+addLogo();

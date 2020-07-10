@@ -1,37 +1,45 @@
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
-@import '~bootstrap';
 
-@font-face {
-  font-family: 'DIN';
-  font-style: normal;
-  font-weight: 300;
-  src: url('./webfonts/DINLightAlternate.ttf') format('ttf');
-}
+// fonts
 
-@font-face {
-  font-family: 'DIN';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./webfonts/DINRegularAlternate.ttf') format('ttf');
-}
+// @font-face {
+//   font-family: 'DIN';
+//   font-style: normal;
+//   font-weight: 300;
+//   src: url('./webfonts/DINLightAlternate.ttf') format('ttf');
+// }
 
-@font-face {
-  font-family: 'DIN';
-  font-style: normal;
-  font-weight: 500;
-  src: url('./webfonts/DINMediumAlternate.ttf') format('ttf');
-}
+// @font-face {
+//   font-family: 'DIN';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('./webfonts/DINRegularAlternate.ttf') format('ttf');
+// }
 
-@font-face {
-  font-family: 'DIN';
-  font-style: normal;
-  font-weight: 900;
-  src: url('./webfonts/DINBlackAlternate.ttf') format('ttf');
+// @font-face {
+//   font-family: 'DIN';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url('./webfonts/DINMediumAlternate.ttf') format('ttf');
+// }
+
+// @font-face {
+//   font-family: 'DIN';
+//   font-style: normal;
+//   font-weight: 900;
+//   src: url('./webfonts/DINBlackAlternate.ttf') format('ttf');
+// }
+
+// style
+
+html {
+  font-size: 62.5%;
 }
 
 body {
+  font-size: 1.6rem;
   font-family: 'DIN', Arial, Helvetica, sans-serif;
   color: #ffffff;
   background-color: #34190E;
@@ -40,16 +48,31 @@ body {
 }
 
 div.jumbotron-fluid {
-  font-family: 'DIN', Arial, Helvetica, sans-serif;
-  font-weight: 900;
-  color: #ffffff;
-  background-color: #000000;
+  background-color: transparent;
 }
 
 footer {
   background-color: #000000;
 }
 
+a.footer-link {
+  color: #C36E29;
+  // color: #925622;
+  // color: #F09A4D;
+  word-wrap: break-word;
+}
+
+a.footer-link:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .fas, .fab {
-  font-size: 3rem;
+  color: #ffffff;
+  font-size: 5rem;
+  margin: 1rem 1rem 0 0;
+}
+
+.fas:hover, .fab:hover {
+  color: #FBB474;
 }

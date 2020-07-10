@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US" class="h-100">
   <head>
-    <link rel="preload" as="font" href="/webfonts/DINBlackAlternate.ttf" type="font/tff" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
   <body class="d-flex flex-column h-100">
     <!-- Begin jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row justify-content-center">
-          <h1 class="display-4">Black Is Beautiful</h1>
+          <div class="col text-center" id="logo">
+            <!-- Insert Black Is Beautiful Logo via JS -->
+          </div>
         </div>
       </div>
     </div>
@@ -16,11 +19,8 @@
 
     <!-- Begin main container -->
     <main role="main" class="container-fluid flex-shrink-0">
-      <div class="row">
-        <div class="col-3">
-          <p>Testing! 1, 2, 3...</p>
-        </div>
-        <div class="col-6">
+      <div class="row justify-content-center">
+        <div class="col-8">
           <p>I also need to figure out why the fonts aren't loading and get working on the PayPal donating button HTML.</p>
         </div>
       </div>
@@ -31,22 +31,39 @@
     <footer class="footer mt-auto py-3">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-3" id="seal">
-            <!-- Insert NAACP Official Seal via JS -->
-          </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6 order-lg-second">
             <h4 class="text-muted">The Ambler NAACP</h4>
             <p class="text-muted">The mission of the Ambler NAACP is to secure the political, educational, social, and economic equality of rights in order to eliminate race-based discrimination and ensure the health and well-being of all persons.</p>
             <p class="text-muted">We serve the North Penn, Wissahickon, and Upper Dublin school districts.</p>
           </div>
-          <div class="col-3">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fas fa-envelope-square"></i>
-            <i class="fas fa-phone-square"></i>
+          <div class="col-6 col-lg-3 order-lg-first text-center" id="seal">
+            <!-- Insert NAACP Official Seal via JS -->
+          </div>
+          <div class="col-6 col-lg-3 order-lg-third">
+            <div class="row">
+              <div class="col">
+                <a class="footer-link" href="https://www.facebook.com/groups/210834673401126"><i class="fab fa-facebook-square"></i><span class="d-none d-lg-inline">The NEW Ambler NAACP</span></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a class="footer-link text-break" href="mailto:amblerbranchnaacp@gmail.com"><i class="fas fa-envelope-square"></i><span class="d-none d-lg-inline">amblerbranchnaacp@gmail.com</span></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a class="footer-link" href="tel:2674056026"><i class="fas fa-phone-square"></i><span class="d-none d-lg-inline">(267) 405-6026</span></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </footer>
     <!-- End footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
