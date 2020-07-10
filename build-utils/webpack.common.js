@@ -1,31 +1,10 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
-  mode: 'development',
   entry: './src/entry.js',
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
-  devtool: 'source-map',
-  devServer: {
-    contentBase: './dist',
-  },
-  plugins: [
-    new ManifestPlugin(),
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'Black Is Beautiful',
-      template: 'black-is-beautiful.html',
-      scriptLoading: 'defer',
-      meta: {
-        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
-      },
-    }),
-  ],
   module: {
     rules: [
       {
@@ -63,10 +42,34 @@ module.exports = {
         }
       }, {
         test: /\.js$/i,
+        exclude: /node_modules/,
         use: [
           'babel-loader'
         ]
       }
     ]
+  },
+  resolve: {
+    extensions: ['*', '.js']
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new ManifestPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Black Is Beautiful',
+      template: 'black-is-beautiful.html',
+      scriptLoading: 'defer',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+      }
+    })
+  ],
+  output: {
+    path: path.resolve(__dirname, '../', 'dist'),
+    publicPath: '/',
+    filename: '[name].bundle.js'
+  },
+  devServer: {
+    contentBase: './dist'
   }
 };
