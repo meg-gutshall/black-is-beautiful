@@ -14,4 +14,5 @@ function naacpSeal() {
   return element;
 }
 
+console.log(process.env.NODE_ENV);
 naacpSeal();
