@@ -43,5 +43,5 @@ function addDonationButton() {
 document.addEventListener('DOMContentLoaded', () => {
   addSeal();
   addLogo();
-  addDonationButton();
+  // addDonationButton();
 });
