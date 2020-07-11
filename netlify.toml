@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/"
-  to = "/black-is-beautiful"
-  status = 302
-  force = true
