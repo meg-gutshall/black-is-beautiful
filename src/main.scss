@@ -57,6 +57,8 @@ div.jumbotron-fluid {
 
 // main body
 
+// donor thanks
+
 .donor-thanks {
   padding: 3rem 0 4rem 0;
 }
@@ -66,11 +68,26 @@ h1 {
   font-weight: 300;
 }
 
+// donation info
+
+img#donate {
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+img#donate:hover {
+  box-shadow:
+  1rem 1rem 2.5rem 1rem rgba(251, 180, 116 ,0.5);
+}
+
+// special thanks
+
 .special-thanks {
   background-color: rgba(52, 25, 14, 0.65);
   border-radius: 35px;
-  margin: 5rem 12rem 4rem 12rem;
-  padding: 6rem 2rem 3rem 2rem;
+  margin: 4rem 10%;
+  padding: 6rem 2rem 5rem 2rem;
 }
 
 h2 {
@@ -101,18 +118,6 @@ a.beer-site.btn:hover {
   0 1rem 3rem rgba(251, 180, 116, 0.3),
   -1rem 0 3rem rgba(251, 180, 116, 0.3),
   1rem 0 3rem rgba(251, 180, 116, 0.3);
-}
-
-input#donate {
-  background-image: url(./images/donate-button-styled.png);
-  background-size: cover;
-  cursor: pointer;
-  border: solid 0.1rem #000000;
-  
-}
-
-input#donate:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 // footer

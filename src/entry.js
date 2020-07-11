@@ -34,6 +34,7 @@ function addDonationButton() {
   donateButton.src = donationButton;
   donateButton.setAttribute('class', 'img-fluid');
   donateButton.setAttribute('alt', 'Donation Button');
+  donateButton.id = "donate";
 
   element.appendChild(donateButton);
   return element;
