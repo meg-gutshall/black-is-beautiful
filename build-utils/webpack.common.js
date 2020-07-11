@@ -66,7 +66,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, '../', 'dist'),
-    publicPath: '/',
+    publicPath: '/black-is-beautiful',
     filename: '[name].bundle.js'
   },
   devServer: {
