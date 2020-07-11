@@ -33,7 +33,7 @@
   src: url('webfonts/DINBlackAlternate.ttf') format('truetype');
 }
 
-// style
+// general style
 
 html {
   font-size: 62.5%;
@@ -48,6 +48,14 @@ body {
   background-image: url(./images/black-is-beautiful-background.png);
   background-size: cover;
 }
+
+// jumbotron
+
+div.jumbotron-fluid {
+  background-color: transparent;
+}
+
+// main body
 
 .donor-thanks {
   padding: 3rem 0 4rem 0;
@@ -95,24 +103,19 @@ a.beer-site.btn:hover {
   1rem 0 3rem rgba(251, 180, 116, 0.3);
 }
 
-// .btn {
-//   font-size: 2rem;
-//   margin: 1rem 0 2rem 0;
-//   padding-top: 2rem;
-// }
-
-button#donate {
-  background: url(./images/donate-button-styled.png) no-repeat;
+input#donate {
+  background-image: url(./images/donate-button-styled.png);
+  background-size: cover;
   cursor: pointer;
+  border: solid 0.1rem #000000;
+  
 }
 
-button#donate:hover {
+input#donate:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-div.jumbotron-fluid {
-  background-color: transparent;
-}
+// footer
 
 footer {
   font-family: 'DIN', Arial, Helvetica, sans-serif;

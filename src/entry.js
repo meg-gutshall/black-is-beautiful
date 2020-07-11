@@ -1,6 +1,7 @@
 import './main.scss';
 import NAACPSeal from './images/naacp-seal-small.png';
 import Logo from './images/black-is-beautiful-logo-small.png';
+import donationButton from './images/donate-button-small.png';
 
 function addSeal() {
   const element = document.getElementById('seal');
@@ -26,5 +27,20 @@ function addLogo() {
   return element;
 }
 
-addSeal();
-addLogo();
+function addDonationButton() {
+  const element = document.getElementById('donate');
+
+  const donateButton = new Image();
+  donateButton.src = donationButton;
+  donateButton.setAttribute('class', 'img-fluid');
+  donateButton.setAttribute('alt', 'Donation Button');
+
+  element.appendChild(donateButton);
+  return element;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  addSeal();
+  addLogo();
+  addDonationButton();
+});
