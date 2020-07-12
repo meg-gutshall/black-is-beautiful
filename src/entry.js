@@ -27,21 +27,7 @@ function addLogo() {
   return element;
 }
 
-function addDonationButton() {
-  const element = document.getElementById('donate');
-
-  const donateButton = new Image();
-  donateButton.src = donationButton;
-  donateButton.setAttribute('class', 'img-fluid');
-  donateButton.setAttribute('alt', 'Donation Button');
-  donateButton.id = "donate";
-
-  element.appendChild(donateButton);
-  return element;
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   addSeal();
   addLogo();
-  // addDonationButton();
 });
