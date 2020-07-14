@@ -53,14 +53,16 @@ body {
 
 div.jumbotron-fluid {
   background-color: transparent;
+  padding: 0;
 }
 
-// main body
+// main-body
 
-// donor thanks
+// donor-thanks
 
 .donor-thanks {
-  padding: 3rem 0 4rem 0;
+  padding-top: 3rem;
+  margin: 0;
 }
 
 h1 {
@@ -68,16 +70,15 @@ h1 {
   font-weight: 300;
 }
 
-// donation info
-
-// Donation disclaimer
-
-p.muted {
-  font-size: 2rem;
-  font-weight: 400;
-  font-style: italic;
-  color: #FFFFFF;
+form.donation-form {
+  margin-bottom: 4rem;
 }
+
+// input#donate-button:hover {
+//   box-shadow:
+//   0 8px 16px 0 rgba(0,0,0,0.2),
+//   0 6px 20px 0 rgba(0,0,0,0.19);
+// }
 
 // PayPal pixel
 
@@ -86,7 +87,16 @@ img#id {
   padding: 0;
 }
 
-// special thanks
+// Donation disclaimer
+
+p.muted {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #FFFFFF;
+}
+
+// special-thanks
 
 .special-thanks {
   background-color: rgba(52, 25, 14, 0.65);
@@ -98,31 +108,33 @@ img#id {
 h2 {
   font-size: 4rem;
   font-weight: 300;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 a.beer-site.btn {
   padding: 2rem 4rem;
   font-size: 2.4rem;
   font-weight: 900;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #220F0A;
   border-color: #C36E29;
+  border-radius: 0.4rem;
   box-shadow:
-  0 -1rem 2rem rgba(251, 180, 116, 0.15), 
-  0 1rem 2rem rgba(251, 180, 116, 0.15),
-  -1rem 0 2rem rgba(251, 180, 116, 0.15),
-  1rem 0 2rem rgba(251, 180, 116, 0.15);
+  0 -1rem 3rem rgba(251, 180, 116, 0.15), 
+  0 1rem 3rem rgba(251, 180, 116, 0.15),
+  -1rem 0 3rem rgba(251, 180, 116, 0.15),
+  1rem 0 3rem rgba(251, 180, 116, 0.15);
   cursor: pointer;
 }
 
 a.beer-site.btn:hover {
-  color: #C36E29;
+  border-color: #C36E29;
+  border-radius: 0.4rem;
   box-shadow:
-  0 -1rem 3rem rgba(251, 180, 116, 0.3), 
-  0 1rem 3rem rgba(251, 180, 116, 0.3),
-  -1rem 0 3rem rgba(251, 180, 116, 0.3),
-  1rem 0 3rem rgba(251, 180, 116, 0.3);
+  0 -1rem 4rem rgba(251, 180, 116, 0.3), 
+  0 1rem 4rem rgba(251, 180, 116, 0.3),
+  -1rem 0 4rem rgba(251, 180, 116, 0.3),
+  1rem 0 4rem rgba(251, 180, 116, 0.3);
 }
 
 // footer
@@ -157,18 +169,21 @@ a.footer-link {
   word-wrap: break-word;
 }
 
-a.footer-link:hover, span.footer-link-text:hover {
+a.footer-link:hover, 
+span.footer-link-text:hover {
   font-weight: bold;
   text-decoration: none;
 }
 
-.fas, .fab {
+.fas, 
+.fab {
   color: #ffffff;
   font-size: 5rem;
   margin: 1rem 1rem 0 0;
 }
 
-.fas:hover, .fab:hover {
+.fas:hover, 
+.fab:hover {
   color: rgb(251, 180, 116);
 }
 

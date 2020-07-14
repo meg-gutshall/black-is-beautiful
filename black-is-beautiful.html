@@ -10,7 +10,7 @@
     <!-- Begin jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
           <div class="col text-center" id="logo">
             <!-- Insert Black Is Beautiful Logo via JS -->
           </div>
@@ -21,23 +21,23 @@
 
     <!-- Begin main container -->
     <main role="main" class="container-fluid flex-shrink-0">
-      <div class="row justify-content-center donor-thanks">
-        <div class="col-lg-8">
-          <h1 class="text-center">We thank you for your support!</h1>
-        </div>
-      </div>
       <div class="row justify-content-center donation-info">
+        <div class="row justify-content-center donor-thanks">
+          <div class="col-9 col-lg-12">
+            <h1 class="text-center">We thank you for your support!</h1>
+          </div>
+        </div>
         <div class="col-lg-10 text-center" id="donate">
+          <form action="https://www.paypal.com/cgi-bin/webscr" class="custom-control custom-control-inline donation-form" method="post" rel="noreferrer" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="HWN88YZ6CGB74" />
+            <input id="donate-button" class="img-fluid" type="image" src="https://raw.githubusercontent.com/meg-gutshall/black-is-beautiful/master/src/images/donate-button-small.png" border="0" name="submit" title="Donate to the Black Is Beautiful fundraiser" alt="Donate to the Black Is Beautiful fundraiser" />
+            <img alt="" border="0" id="pixel" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1px" height="1px" />
+          </form>
           <p>Please donate directly to the NAACP Ambler Branch by clicking the donate button.</p>
           <p>If you would like to donate by check instead, please make it out to: NAACP Ambler Branch</p>
           <p>And remit to: 200 W. Butler Ave., PO Box 674, Ambler, PA 19002</p>
           <p class="muted">*Donations are not tax-deductable.</p>
-          <form action="https://www.paypal.com/cgi-bin/webscr" class="custom-control custom-control-inline" method="post" rel="noreferrer" target="_blank">
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="HWN88YZ6CGB74" />
-            <input class="img-fluid" type="image" src="https://raw.githubusercontent.com/meg-gutshall/black-is-beautiful/master/src/images/donate-button-small.png" border="0" name="submit" title="Donate to the Black Is Beautiful fundraiser" alt="Donate to the Black Is Beautiful fundraiser" />
-            <img alt="" border="0" id="pixel" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1px" height="1px" />
-          </form>
         </div>
       </div>
       <div class="row justify-content-center">
