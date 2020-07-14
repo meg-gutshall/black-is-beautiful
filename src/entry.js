@@ -1,7 +1,6 @@
 import './main.scss';
 import NAACPSeal from './images/naacp-seal-small.png';
 import Logo from './images/black-is-beautiful-logo-small.png';
-import donationButton from './images/donate-button-small.png';
 
 function addSeal() {
   const element = document.getElementById('seal');
