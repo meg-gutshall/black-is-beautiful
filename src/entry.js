@@ -1,5 +1,5 @@
 import './main.scss';
-import NAACPSeal from './images/naacp-seal-small.png';
+import NAACPSeal from './images/naacp-seal.png';
 import Logo from './images/black-is-beautiful-logo-small.png';
 
 function addSeal() {
@@ -19,7 +19,6 @@ function addLogo() {
 
   const logo = new Image();
   logo.src = Logo;
-  logo.setAttribute('class', 'img-fluid');
   logo.setAttribute('alt', 'Black Is Beautiful Logo');
 
   element.appendChild(logo);

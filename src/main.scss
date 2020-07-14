@@ -3,7 +3,7 @@
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
-// fonts
+//--- fonts ---//
 
 @font-face {
   font-family: 'DIN';
@@ -33,7 +33,7 @@
   src: url('webfonts/DINBlackAlternate.ttf') format('truetype');
 }
 
-// colors
+//--- colors ---//
 
 $white:     rgb(255, 255, 255) !default;
 $lighter:   rgb(251, 180, 116) !default;
@@ -48,7 +48,7 @@ $brownest:  rgb(52, 25, 14) !default;
 $dark:      rgb(34, 15, 10) !default;
 $black:     rgb(0, 0, 0) !default;
 
-// general style
+//--- general styling ---//
 
 html {
   font-size: 62.5%;
@@ -64,16 +64,22 @@ body {
   background-size: cover;
 }
 
-// jumbotron
+//--- jumbotron ---//
 
 div.jumbotron-fluid {
   background-color: transparent;
   padding: 0;
 }
 
-// main-body
+// Black Is Beautiful logo
 
-// donor-thanks
+#logo {
+  padding-top: 4rem;
+}
+
+//--- main body content ---//
+
+// donor thanks
 
 .donor-thanks {
   padding-top: 3rem;
@@ -84,6 +90,8 @@ h1 {
   font-size: 7.2rem;
   font-weight: 300;
 }
+
+// donation form/button
 
 form#donation-form {
   margin-bottom: 4rem;
@@ -102,7 +110,7 @@ img#id {
   padding: 0;
 }
 
-// Donation disclaimer
+// donation disclaimer
 
 p.muted {
   font-size: 1.8rem;
@@ -110,7 +118,7 @@ p.muted {
   font-style: italic;
 }
 
-// special-thanks
+// special thanks block
 
 .special-thanks {
   background-color: rgba($dark, 0.75);
@@ -153,7 +161,7 @@ a.beer-site.btn:hover {
   1rem 0 4rem rgba($reddish, 0.75);
 }
 
-// footer
+//--- footer ---//
 
 footer {
   font-family: 'DIN', Arial, Helvetica, sans-serif;
@@ -162,18 +170,23 @@ footer {
   background-color: $black;
 }
 
+// about section
+
+.stikky-footer {
+  margin: 2rem 0;
+}
+
+.stikky-footer > .about-text {
+  color: #CDCDCD;
+  margin-top: 2rem;
+}
+
 h3 {
   font-size: 2.2rem;
   font-weight: 500;
 }
 
-.footer-text {
-  color: #CDCDCD;
-}
-
-.stikky-footer {
-  margin: 2rem 0;
-}
+// social media links
 
 span.footer-link-text {
   position: relative;
@@ -203,6 +216,7 @@ span.footer-link-text:hover {
   color: $light;
 }
 
-#logo {
-  padding-top: 4rem;
+#seal > img {
+  max-width: 65%;
+  height: auto;
 }
