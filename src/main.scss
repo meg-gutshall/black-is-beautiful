@@ -44,7 +44,7 @@ $tannest:   rgb(146, 86, 34) !default;
 $reddish:   rgb(131, 55, 27) !default;
 $brown:     rgb(93, 41, 14) !default;
 $browner:   rgb(76, 32, 15) !default;
-$brownest:  rgb(52, 25, 15) !default;
+$brownest:  rgb(52, 25, 14) !default;
 $dark:      rgb(34, 15, 10) !default;
 $black:     rgb(0, 0, 0) !default;
 
@@ -113,7 +113,7 @@ p.muted {
 // special-thanks
 
 .special-thanks {
-  background-color: rgba($reddish, 0.75);
+  background-color: rgba($dark, 0.75);
   border-radius: 35px;
   margin: 4rem 2rem 6rem 2rem;
   padding: 5rem 2.5rem;
@@ -129,26 +129,28 @@ a.beer-site.btn {
   padding: 2rem 4rem;
   font-size: 2.4rem;
   font-weight: 900;
-  color: $brownest;
-  background-color: $lighter;
+  color: $dark;
+  background-color: $light;
   border-color: $dark;
   border-width: 2px;
   border-radius: 0.5rem;
   box-shadow:
-  0 -1rem 3rem rgba($dark, 0.3), 
-  0 1rem 3rem rgba($dark, 0.3),
-  -1rem 0 3rem rgba($dark, 0.3),
-  1rem 0 3rem rgba($dark, 0.3);
+  0 -1rem 3rem rgba($reddish, 0.5), 
+  0 1rem 3rem rgba($reddish, 0.5),
+  -1rem 0 3rem rgba($reddish, 0.5),
+  1rem 0 3rem rgba($reddish, 0.5);
   cursor: pointer;
 }
 
 a.beer-site.btn:hover {
+  color: $browner;
+  background-color: $lighter;
   border-radius: 0.4rem;
   box-shadow:
-  0 -1rem 3rem rgba($dark, 0.5), 
-  0 1rem 3rem rgba($dark, 0.5),
-  -1rem 0 3rem rgba($dark, 0.5),
-  1rem 0 3rem rgba($dark, 0.5);
+  0 -1rem 4rem rgba($reddish, 0.75), 
+  0 1rem 4rem rgba($reddish, 0.75),
+  -1rem 0 4rem rgba($reddish, 0.75),
+  1rem 0 4rem rgba($reddish, 0.75);
 }
 
 // footer
