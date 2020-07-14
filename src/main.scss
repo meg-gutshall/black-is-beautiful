@@ -33,6 +33,21 @@
   src: url('webfonts/DINBlackAlternate.ttf') format('truetype');
 }
 
+// colors
+
+$white:     rgb(255, 255, 255) !default;
+$lighter:   rgb(251, 180, 116) !default;
+$light:     rgb(240, 154, 77) !default;
+$tan:       rgb(203, 127, 58) !default;
+$tanner:    rgb(195, 110, 41) !default;
+$tannest:   rgb(146, 86, 34) !default;
+$reddish:   rgb(131, 55, 27) !default;
+$brown:     rgb(93, 41, 14) !default;
+$browner:   rgb(76, 32, 15) !default;
+$brownest:  rgb(52, 25, 15) !default;
+$dark:      rgb(34, 15, 10) !default;
+$black:     rgb(0, 0, 0) !default;
+
 // general style
 
 html {
@@ -43,8 +58,8 @@ body {
   font-family: 'DIN', Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
-  color: #ffffff;
-  background-color: #34190E;
+  color: $white;
+  background-color: $brownest;
   background-image: url(./images/black-is-beautiful-background.png);
   background-size: cover;
 }
@@ -70,15 +85,15 @@ h1 {
   font-weight: 300;
 }
 
-form.donation-form {
+form#donation-form {
   margin-bottom: 4rem;
 }
 
-// input#donate-button:hover {
-//   box-shadow:
-//   0 8px 16px 0 rgba(0,0,0,0.2),
-//   0 6px 20px 0 rgba(0,0,0,0.19);
-// }
+input#donate-button:hover {
+  box-shadow:
+  0 2rem 2rem rgba($dark ,0.5),
+  -2rem 0 2rem rgba($dark ,0.5);
+}
 
 // PayPal pixel
 
@@ -93,13 +108,12 @@ p.muted {
   font-size: 1.8rem;
   font-weight: 400;
   font-style: italic;
-  color: #FFFFFF;
 }
 
 // special-thanks
 
 .special-thanks {
-  background-color: rgba(52, 25, 14, 0.65);
+  background-color: rgba($reddish, 0.75);
   border-radius: 35px;
   margin: 4rem 2rem 6rem 2rem;
   padding: 5rem 2.5rem;
@@ -115,26 +129,26 @@ a.beer-site.btn {
   padding: 2rem 4rem;
   font-size: 2.4rem;
   font-weight: 900;
-  color: #FFFFFF;
-  background-color: #220F0A;
-  border-color: #C36E29;
-  border-radius: 0.4rem;
+  color: $brownest;
+  background-color: $lighter;
+  border-color: $dark;
+  border-width: 2px;
+  border-radius: 0.5rem;
   box-shadow:
-  0 -1rem 3rem rgba(251, 180, 116, 0.15), 
-  0 1rem 3rem rgba(251, 180, 116, 0.15),
-  -1rem 0 3rem rgba(251, 180, 116, 0.15),
-  1rem 0 3rem rgba(251, 180, 116, 0.15);
+  0 -1rem 3rem rgba($dark, 0.3), 
+  0 1rem 3rem rgba($dark, 0.3),
+  -1rem 0 3rem rgba($dark, 0.3),
+  1rem 0 3rem rgba($dark, 0.3);
   cursor: pointer;
 }
 
 a.beer-site.btn:hover {
-  border-color: #C36E29;
   border-radius: 0.4rem;
   box-shadow:
-  0 -1rem 4rem rgba(251, 180, 116, 0.3), 
-  0 1rem 4rem rgba(251, 180, 116, 0.3),
-  -1rem 0 4rem rgba(251, 180, 116, 0.3),
-  1rem 0 4rem rgba(251, 180, 116, 0.3);
+  0 -1rem 3rem rgba($dark, 0.5), 
+  0 1rem 3rem rgba($dark, 0.5),
+  -1rem 0 3rem rgba($dark, 0.5),
+  1rem 0 3rem rgba($dark, 0.5);
 }
 
 // footer
@@ -143,7 +157,7 @@ footer {
   font-family: 'DIN', Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
-  background-color: #000000;
+  background-color: $black;
 }
 
 h3 {
@@ -152,7 +166,7 @@ h3 {
 }
 
 .footer-text {
-  color: #cdcdcd;
+  color: #CDCDCD;
 }
 
 .stikky-footer {
@@ -165,7 +179,7 @@ span.footer-link-text {
 }
 
 a.footer-link {
-  color: #C36E29;
+  color: $tan;
   word-wrap: break-word;
 }
 
@@ -177,14 +191,14 @@ span.footer-link-text:hover {
 
 .fas, 
 .fab {
-  color: #ffffff;
+  color: $white;
   font-size: 5rem;
   margin: 1rem 1rem 0 0;
 }
 
 .fas:hover, 
 .fab:hover {
-  color: rgb(251, 180, 116);
+  color: $light;
 }
 
 #logo {
