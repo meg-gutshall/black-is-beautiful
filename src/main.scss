@@ -96,10 +96,21 @@ form#donation-form {
   margin-bottom: 4rem;
 }
 
+input#donate-button {
+  box-shadow:
+  -12.5px 12.5px 5px rgba($dark ,0.75);
+}
+
 input#donate-button:hover {
   box-shadow:
-  0 2rem 2rem rgba($dark ,0.5),
-  -2rem 0 2rem rgba($dark ,0.5);
+  -2.5px 2.5px 5px rgba($lighter ,0.5),
+  2.5px -2.5px 5px rgba($lighter ,0.5),
+  -12.5px 12.5px 5px rgba($dark ,0.75);
+}
+
+input#donate-button:focus {
+  outline-style: solid;
+  outline-color: $lighter;
 }
 
 // PayPal pixel
