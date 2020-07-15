@@ -1,6 +1,6 @@
 import './main.scss';
 import NAACPSeal from './images/naacp-seal.png';
-import Logo from './images/black-is-beautiful-logo-small.png';
+import Logo from './images/black-is-beautiful-logo.png';
 
 function addSeal() {
   const element = document.getElementById('seal');
