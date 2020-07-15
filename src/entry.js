@@ -7,7 +7,6 @@ function addSeal() {
 
   const seal = new Image();
   seal.src = NAACPSeal;
-  seal.setAttribute('class', 'img-fluid');
   seal.setAttribute('alt', 'NAACP Official Seal');
 
   element.appendChild(seal);
@@ -19,6 +18,7 @@ function addLogo() {
 
   const logo = new Image();
   logo.src = Logo;
+  logo.setAttribute('class', 'img-fluid');
   logo.setAttribute('alt', 'Black Is Beautiful Logo');
 
   element.appendChild(logo);
