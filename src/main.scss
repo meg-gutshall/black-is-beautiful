@@ -183,7 +183,7 @@ footer {
 // about section
 
 .stikky-footer {
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
 .stikky-footer > .about-text {
@@ -196,21 +196,22 @@ h3 {
   font-weight: 500;
 }
 
+p.copyright {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #CDCDCD;
+  padding-top: 1rem;
+}
+
 // social media links
 
-span.footer-link-text {
-  position: relative;
-  bottom: 1rem;
-}
-
 a.footer-link {
-  color: $tan;
-  word-wrap: break-word;
+  color: $light;
+  font-weight: 500;
 }
 
-a.footer-link:hover, 
-span.footer-link-text:hover {
-  font-weight: bold;
+a.footer-link:hover {
+  color: $tanner;
   text-decoration: none;
 }
 
@@ -226,7 +227,15 @@ span.footer-link-text:hover {
   color: $light;
 }
 
+// NAACP seal
+
+#seal {
+  height: 17.5rem;
+}
+
 #seal > img {
-  max-width: 65%;
-  height: auto;
+  display: block;
+  width: auto;
+  max-height: 100%;
+  float: right;
 }
