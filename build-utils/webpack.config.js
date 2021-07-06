@@ -7,7 +7,7 @@ module.exports = env => {
   switch(env) {
     case 'dev':
       return Object.assign(sharedConfig, developmentConfig);
-    case 'prod':;
+    case 'prod':
       return Object.assign(sharedConfig, productionConfig);
     default:
       throw new Error('No matching configuration was found!');
