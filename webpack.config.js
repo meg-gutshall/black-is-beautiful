@@ -1,18 +1,12 @@
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
-
-module.exports = (env, argv) => {
-  return {
-    mode: env.WEBPACK_SERVE ? 'development' : 'production',
-    devtool: env.WEBPACK_SERVE ? 'eval-source-map' : 'source-map',
-  };
-};
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
 module.exports = (env, argv) => {
   return {
     entry: './src/entry.js',
+    mode: env.WEBPACK_SERVE ? 'development' : 'production',
+    devtool: env.WEBPACK_SERVE ? 'eval-source-map' : 'source-map',
     module: {
       rules: [
         {
@@ -61,8 +55,7 @@ module.exports = (env, argv) => {
       extensions: ['*', '.js']
     },
     plugins: [
-      new CleanWebpackPlugin(),
-      new ManifestPlugin(),
+      new WebpackManifestPlugin(),
       new HtmlWebpackPlugin({
         title: 'Black Is Beautiful',
         template: 'black-is-beautiful.html',
@@ -75,6 +68,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, '../', 'dist'),
       filename: '[name].bundle.js',
+      clean: true,
     },
     devServer: {
       static: {
